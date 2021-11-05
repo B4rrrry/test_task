@@ -1,0 +1,213 @@
+.order {
+  padding-top: 100px;
+  padding-bottom: 160px;
+  background: linear-gradient(
+    180deg,
+    #bfd3dd 0%,
+    rgba(190, 187, 220, 0.957108) 19.89%,
+    rgba(126, 11, 122, 0.79) 97.37%
+  );
+  // title
+  &__title {
+    margin-bottom: 12px;
+  }
+  // wrap
+  &__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-action {
+      margin-bottom: 60px;
+    }
+  }
+  // name
+  &__name {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 55px;
+    margin: 0 auto;
+  }
+  // action
+  &__action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  // time
+  &__time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    line-height: 82px;
+    // text
+    &_text {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 49px;
+      margin-right: 115px;
+    }
+    // value name
+    &-value {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &_name {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+  // type
+  &__type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  // form
+  &__form {
+    width: 445px;
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 70px 65px 75px;
+    margin-right: 190px;
+  }
+  .form {
+    // title
+    &__title {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 33px;
+      text-align: center;
+      margin-bottom: 60px;
+      color: #000;
+    }
+    // list
+    &__list {
+      &-item {
+        position: relative;
+        margin-bottom: 60px;
+        &:nth-child(2) {
+          margin-bottom: 60px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        label {
+          color:#000;
+          font-size: 16px;
+        }
+      }
+    }
+    // input
+    &__input {
+      width: 315px;
+      height: 60px;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding-left: 25px;
+      font-size: 16px;
+      line-height: 22px;
+      position: relative;
+      transition: all 0.3s ease;
+      &::placeholder {
+        opacity: 0;
+      }
+      &:focus::placeholder {
+        opacity: 1;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+      }
+      &:placeholder-shown {
+        color: rgba(0, 0, 0, 0.7);
+      }
+    }
+    // submit
+    &__submit {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000;
+      background-color: transparent;
+    }
+    // prompt 
+    &__prompt {
+      width: fit-content;
+      padding: 10px 5px;
+      background-color: #000;
+      border-radius: 10px;
+      position: absolute;
+      top:-45px;
+      right: 0;
+      opacity: 0;
+      transition: all 0.3s ease;
+      &-active {
+        display: block;
+      }
+      // text 
+      &-text {
+        font-size: 14px;
+      }
+    }
+  }
+
+  // order product
+  &__product {
+  }
+  // img
+  &__img {
+    width: 254px;
+    height: 392px;
+    filter: drop-shadow(10px 11px 14px rgba(0, 0, 0, 0.15));
+    margin-bottom: 40px;
+  }
+  // price
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // new
+    &-new {
+      font-weight: bold;
+      font-size: 56px;
+      line-height: 76px;
+      margin-right: 20px;
+      position: relative;
+      animation: 2s ease 1s infinite alternate both running newPrice;
+      animation-name: newPrice;
+    }
+    @keyframes newPrice {
+      from {
+        top:-20px;
+      }
+      to {
+        top:0px;
+        bottom:-40px;
+      }
+    }
+    // prev
+    &-prev {
+      width: fit-content;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 41px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        top:50%;
+      }
+    }
+  }
+}

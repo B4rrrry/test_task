@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="js/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+        mobile: false,
+      });
+      wow.init();
+    </script>
+    <title>LevelUp</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <!-- logo  -->
+          <p class="header__logo wow animate__animated animate__fadeIn">
+            Level<span>Up</span>
+          </p>
+          <!-- logo end  -->
+          <!-- nav  -->
+          <nav class="nav">
+            <ul class="header__nav wow animate__animated animate__fadeIn">
+              <li class="header__nav-item">
+                <a href="#promo" class="header__nav-link">Промо</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#composition" class="header__nav-link">Состав продукта</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#reviews" class="header__nav-link">Отзывы</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#promo1" class="header__nav-link">Промо</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#order" class="header__nav-link">Форма заказа</a>
+              </li>
+            </ul>
+            <div class="header__burger-wrap">
+             <div class="header__burger-wrapper">
+               <div class="burger__close">
+                 <span></span>
+               </div>
+                <!-- logo  -->
+                <p class="header__logo">
+                  Level<span>Up</span>
+                </p>
+                <!-- logo end  -->
+                <ul class="header__burger-nav burger__nav">
+                  <li class="burger__nav-item">
+                    <a href="#promo" class="burger__nav-link">Промо</a>
+                  </li>
+                  <li class="burger__nav-item">
+                    <a href="#composition" class="burger__nav-link">Состав продукта</a>
+                  </li>
+                  <li class="burger__nav-item">
+                    <a href="#reviews" class="burger__nav-link">Отзывы</a>
+                  </li>
+                  <li class="burger__nav-item">
+                    <a href="#promo1" class="burger__nav-link">Промо</a>
+                  </li>
+                  <li class="burger__nav-item">
+                    <a href="#order" class="burger__nav-link">Форма заказа</a>
+                  </li>
+                </ul>
+             </div>
+            </div>
+          </nav>
+          <!-- nav  -->
+          <!-- burger btn  -->
+          <div class="burger__btn">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="offer" id="promo">
+        <!-- video  -->
+        <video
+          src="video/offer/video.mp4"
+          autoplay
+          muted
+          class="offer__video"
+        ></video>
+        <!-- video end -->
+        <div class="container">
+          <div class="row">
+            <!-- title  -->
+            <h1 class="offer__title wow animate__animated animate__fadeIn">
+              LevelUp
+            </h1>
+          </div>
+          <div class="row">
+            <!-- offer info   -->
+            <div class="offer__info">
+              <!-- info list -->
+              <ul
+                class="
+                  offer__info-list offer__list
+                  wow
+                  animate__animated animate__fadeInLeft
+                "
+              >
+                <li class="offer__info-item">
+                  <p class="offer__info-text">Первая характеристика</p>
+                </li>
+                <li class="offer__info-item">
+                  <p class="offer__info-text">Вторая характеристика</p>
+                </li>
+                <li class="offer__info-item">
+                  <p class="offer__info-text">Третья характеристика</p>
+                </li>
+              </ul>
+              <!-- link  -->
+              <a
+                href="#order"
+                class="offer__link wow animate__animated animate__fadeInLeft"
+                >Заказать</a
+              >
+            </div>
+            <!-- img  -->
+            <img
+              src="img/offer/banka.png"
+              alt="banka"
+              class="offer__img wow animate__animated animate__fadeInRight"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="composition" id="composition">
+        <div class="container">
+          <div class="row">
+            <!-- title  -->
+            <h2
+              class="composition__title wow animate__animated animate__fadeIn"
+            >
+              Состав нашего продукта
+            </h2>
+          </div>
+          <div class="row">
+            <div class="composition__wrap">
+              <!-- composition list  -->
+              <ul
+                class="
+                  composition__list
+                  wow
+                  animate__animated animate__fadeInLeftBig
+                "
+              >
+                <li class="composition__list-item">
+                  <img
+                    src="img/compos/ingr.png"
+                    alt="compos"
+                    class="composition__list-img"
+                  />
+                  <p class="composition__list-text">Ингредиент</p>
+                </li>
+                <li class="composition__list-item">
+                  <img
+                    src="img/compos/ingr.png"
+                    alt="compos"
+                    class="composition__list-img"
+                  />
+                  <p class="composition__list-text">Ингредиент</p>
+                </li>
+                <li class="composition__list-item">
+                  <img
+                    src="img/compos/ingr.png"
+                    alt="compos"
+                    class="composition__list-img"
+                  />
+                  <p class="composition__list-text">Ингредиент</p>
+                </li>
+              </ul>
+              <!-- img  -->
+              <img
+                src="img/compos/banka.png"
+                alt="banka"
+                class="
+                  composition__img
+                  wow
+                  animate__animated animate__fadeInLeft
+                "
+              />
+              <!-- composition list  -->
+              <ul
+                class="
+                  composition__list composition__list-second
+                  wow
+                  animate__animated animate__fadeInRightBig
+                "
+              >
+                <li class="composition__list-item">
+                  <img
+                    src="img/compos/ingr.png"
+                    alt="compos"
+                    class="composition__list-img"
+                  />
+                  <p class="composition__list-text">Ингредиент</p>
+                </li>
+                <li class="composition__list-item">
+                  <img
+                    src="img/compos/ingr.png"
+                    alt="compos"
+                    class="composition__list-img"
+                  />
+                  <p class="composition__list-text">Ингредиент</p>
+                </li>
+                <li class="composition__list-item">
+                  <img
+                    src="img/compos/ingr.png"
+                    alt="compos"
+                    class="composition__list-img"
+                  />
+                  <p class="composition__list-text">Ингредиент</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <a
+              href="#order"
+              class="
+                composition__link
+                wow
+                animate__animated animate__fadeInLeft
+              "
+              >Заказать</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <div class="row">
+            <!-- title  -->
+            <h2 class="reviews__title wow animate__animated animate__fadeIn">
+              Отзывы
+            </h2>
+          </div>
+          <div class="row">
+            <!-- slider  -->
+            <div class="reviews__slider">
+              <!-- item  -->
+              <div class="slider__item">
+                <!-- img  -->
+                <img
+                  src="img/rev/oleg.png"
+                  alt="oleg"
+                  class="
+                    reviews__img
+                    wow
+                    animate__animated animate__fadeInRight
+                  "
+                />
+                <!-- name  -->
+                <p
+                  class="
+                    reviews__name
+                    wow
+                    animate__animated animate__fadeInRightBig
+                  "
+                >
+                  Олег
+                </p>
+                <!-- desc  -->
+                <p
+                  class="
+                    reviews__desc
+                    wow
+                    animate__animated animate__fadeInLeft
+                  "
+                >
+                  Очень хороший продукт! Пользуюсь им довольно часто Вызывает
+                  только положительные впечатления.
+                </p>
+              </div>
+              <!-- item end  -->
+              <!-- item  -->
+              <div class="slider__item">
+                <!-- img  -->
+                <img src="img/rev/oleg.png" alt="oleg" class="reviews__img" />
+                <!-- name  -->
+                <p class="reviews__name">Олег</p>
+                <!-- desc  -->
+                <p class="reviews__desc">
+                  Очень хороший продукт! Пользуюсь им довольно часто Вызывает
+                  только положительные впечатления.
+                </p>
+              </div>
+              <!-- item end  -->
+              <!-- item  -->
+              <div class="slider__item">
+                <!-- img  -->
+                <img src="img/rev/oleg.png" alt="oleg" class="reviews__img" />
+                <!-- name  -->
+                <p class="reviews__name">Олег</p>
+                <!-- desc  -->
+                <p class="reviews__desc">
+                  Очень хороший продукт! Пользуюсь им довольно часто Вызывает
+                  только положительные впечатления.
+                </p>
+              </div>
+              <!-- item end  -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="promo1">
+        <div class="container">
+          <div class="row">
+            <!-- title  -->
+            <h2 class="about__title wow animate__animated animate__fadeIn">
+              Подробнее о продукте
+            </h2>
+          </div>
+          <div class="row">
+            <!-- info  -->
+            <p class="about__info wow animate__animated animate__fadeInLeft">
+              Описание описаниеОписание описание Описание описаниеОписание
+              описание Описание описаниеОписание описание Описание
+              описаниеОписание описание Описание описаниеОписание описание
+              Описание описаниеОписание описание Описание описаниеОписание
+              описание Описание описаниеОписание описание Описание
+              описаниеОписание описание
+            </p>
+            <!-- img  -->
+            <img
+              src="img/about/vrach.png"
+              alt="vrach"
+              class="about__img wow animate__animated animate__fadeInRight"
+            />
+          </div>
+          <div class="row fd-c">
+            <!-- chars -->
+            <ul class="about__chars wow animate__animated animate__fadeIn">
+              <li class="about__chars-item">
+                <p class="about__chars-text">Характеристика1</p>
+              </li>
+              <li class="about__chars-item">
+                <p class="about__chars-text">Характеристика2</p>
+              </li>
+              <li class="about__chars-item">
+                <p class="about__chars-text">Характеристика3</p>
+              </li>
+            </ul>
+            <!-- link  -->
+            <a
+              href="#order"
+              class="about__link wow animate__animated animate__fadeIn"
+              >Заказать</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="order" id="order">
+        <div class="container">
+          <div class="row">
+            <!-- title  -->
+            <h2 class="order__title wow animate__animated animate__fadeIn">
+              Успейте заказать
+            </h2>
+          </div>
+          <div class="row">
+            <!-- wrap  -->
+            <div class="order__wrap order__wrap-action fd-c">
+              <!-- name  -->
+              <h3
+                class="
+                  order__name
+                  wow
+                  animate__animated animate__fadeInRightBig
+                "
+              >
+                LevelUp
+              </h3>
+              <!-- action  -->
+              <div class="order__action">
+                <!-- text  -->
+                <p
+                  class="
+                    order__time_text
+                    wow
+                    animate__animated animate__fadeInLeftBig
+                  "
+                >
+                  До конца акции:
+                </p>
+                <!-- time  -->
+                <div class="order__time">
+                  <!-- hours  -->
+                  <div class="order__hours order__type">
+                    <p class="order__value order__value-h">0</p>
+                    <p class="order__time-value_name">Часов</p>
+                  </div>
+                  <!-- min -->
+                  <div class="order__minutes order__type">
+                    <p class="order__value order__value-m">30</p>
+                    <p class="order__time-value_name">Минут</p>
+                  </div>
+                  <!-- sec  -->
+                  <div class="order__seconds order__type">
+                    <p class="order__value order__value-s">0</p>
+                    <p class="order__time-value_name">Секунд</p>
+                  </div>
+                </div>
+                <!-- time end  -->
+              </div>
+              <!-- action end  -->
+            </div>
+            <!-- wrap end  -->
+          </div>
+          <div class="row">
+            <div class="order__wrap">
+              <!-- form -->
+              <form
+                action="#"
+                method="post"
+                class="order__form wow animate__animated animate__fadeInLeftBig"
+              >
+                <!-- title  -->
+                <p class="form__title">Оставьте заявку и мы с вами свяжемся</p>
+                <ul class="form__list">
+                  <li class="form__list-item">
+                    <label for="name">Имя</label>
+                    <input
+                      type="text"
+                      class="form__input input__text"
+                      name="name"
+                      placeholder="Дмитрий"
+                    />
+                  </li>
+                  <li class="form__list-item">
+                    <label for="phone">Телефон</label>
+                    <input
+                      type="text"
+                      class="form__input input__text"
+                      id="form__phone"
+                      placeholder="+7-123-444-12-33"
+                      name="phone"
+                    />
+                  </li>
+                  <li class="form__list-item">
+                    <input
+                      type="submit"
+                      class="form__input form__submit"
+                      value="Заказать"
+                    />
+                  </li>
+                </ul>
+              </form>
+              <!-- price  -->
+              <div
+                class="
+                  order__product
+                  wow
+                  animate__animated animate__fadeInRight
+                "
+              >
+                <!-- img  -->
+                <img src="img/order/banka.png" alt="banka" class="order__img" />
+                <div class="order__price">
+                  <!-- new  -->
+                  <p class="order__price-new">1000₽</p>
+                  <!-- prev  -->
+                  <p class="order__price-prev">1900₽</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script_sliders.js"></script>
+  </body>
+</html>

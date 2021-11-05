@@ -1,0 +1,48 @@
+/*Specifications*/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  color: #FFFFFF;
+}
+.container {
+  width: 1170px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 82px;
+  margin: 0 auto;
+}
+h2 {
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 71px;
+  margin: 0 auto;
+}
+.fd-c {
+  flex-direction: column
+}
+.header__burger-wrap {
+  display: none;
+}
+.burger__btn {
+  display: none;
+}
+/*Specifications end*/
+@import "./header";
+@import "./offer";
+@import "./composition";
+@import "./reviews";
+@import "./about";
+@import "./order";
+@import "./responsive";
